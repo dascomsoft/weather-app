@@ -1,0 +1,67 @@
+@charset "UTF-8";
+/* MAIN CONTAINER */
+body {
+  background-image: radial-gradient(rgba(20, 21, 51, 0.5), rgba(20, 21, 51, 0.5)), url(images/weather.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  color: #fff;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Teko", sans-serif;
+}
+
+.main-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* La hauteur de la vue */
+  padding: 10px;
+  text-align: center;
+}
+.main-container #icon {
+  width: 70px;
+}
+.main-container #btn {
+  background-color: #555;
+  color: #fff;
+  cursor: pointer;
+}
+@media (max-width: 500px) {
+  .main-container #btn {
+    margin-top: 10px;
+  }
+}
+.main-container .main-detail {
+  max-width: 90%; /* Limite la largeur de .main-detail à 90% de la largeur de l'écran */
+  width: 100%; /* Assure que la largeur de .main-detail est égale à 100% de la largeur de l'écran */
+  overflow-x: hidden; /* Masque tout contenu qui dépasse la largeur de .main-detail */
+  margin: auto; /* Centre .main-detail horizontalement */
+  padding: 20px; /* Ajoute une marge intérieure pour éviter que le contenu ne touche les bords */
+  border-radius: 20px;
+  background-image: radial-gradient(rgba(20, 21, 51, 0.5), rgba(20, 21, 51, 0.5)), url(images/weather4.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  color: #fff;
+}
+.main-container .main-detail .input-section input {
+  border: 1px solid #c0c0c0;
+  padding: 10px;
+  border-radius: 15px;
+  outline: none;
+}
+.main-container .main-detail .input-section button {
+  border: none;
+  padding: 10px;
+  border-radius: 15px;
+  border: 1px solid hsl(0, 0%, 75%);
+}
+
+.description {
+  display: flex;
+  justify-content: space-around;
+}/*# sourceMappingURL=app.css.map */
